@@ -1,13 +1,4 @@
-/*
-What is JavaScript and how does it help websites?
-
-JavaScript is a programming language that makes websites interactive and dynamic.
-It allows web pages to respond to user actions, update content without reloading,
-validate forms, create animations, and handle events. Without JavaScript, websites
-would only display static information like plain text and images.
-*/
-
-//hello it's ralph
+//hello it's Ralph
 
 const titleDef= "Digital Welcome Board ";
 //first h1
@@ -19,13 +10,24 @@ let fullname = "Ralph Raymond B. Eborda"
 let name = `Hello to you, my name is <b>${fullname}</b>, or in short just Ralph.`;
 //first p/fullname
 let favsub = "<i>computer programming</i>";
-let sub = `My favorite subject is ${favsub}.`;
+let missyou = `(Computer programming is the process of writing code,<br>
+ a set of instructions, that tells a computer <b>how to perform</b> a specific task,<br> solve a problem, or create software.)`
+let sub = `My <b>favorite</b> subject is ${favsub}. ${missyou}`;
 //second p/favsub
 let motiv = " Here's a motivational message for you:";
 //third p/motivational
 var essence = "broken jade";
 var essence2 = "INTACT TILE";
 
+let question = "What is JavaScript and how does it <b>help</b> websites?";
+let ans = "JavaScript is a programming language";
+let ans2 = "<b>interactive and dynamic</b>";
+let ans3 = `respond to user actions, update content without reloading,
+validate forms, create animations, and handle events`;
+let ans4 = "<b>display static information</b>";
+let answer = `${ans} that makes websites ${ans2}.
+It allows web pages to <br>${ans3}.<br> Without JavaScript, websites
+would only ${ans4} like plain text and images.`;
 
 essence2 = essence2.toLowerCase();
 essence = essence.toUpperCase();
@@ -39,6 +41,8 @@ document.getElementById("fn").innerHTML = name;
 document.getElementById("favsubject").innerHTML = sub;
 document.getElementById("here").innerHTML = motiv;
 document.getElementById("mess").innerHTML = message;
+document.getElementById("qqq").innerHTML = question;
+document.getElementById("qna").innerHTML = answer;
 
 console.log(wel.length);
 console.log(message.length);
